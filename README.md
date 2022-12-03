@@ -64,4 +64,4 @@ The web application use *Three-tier architecture* with Front-end, Back-end, and 
 
 See the structure of **MeLokody** here:
 
-![architecture](https://github.com/cse278abcd-assignments/assignment4-tranlh4/blob/main/architecture.png)
+![architecture](https://github.com/TranHVLoc/MeLokody/blob/main/architecture.png)
