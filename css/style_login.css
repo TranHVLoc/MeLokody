@@ -1,0 +1,144 @@
+html {
+  background: linear-gradient(#141e30, #243b55);
+}
+
+body {
+  color: white;
+}
+
+.container {
+  height: 50vh;
+  width: 100vw;
+  max-height: 800px;
+  max-width: 1280px;
+  min-height: 600px;
+  min-width: 1000px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.border {
+  height: 369px;
+  width: 290px;
+  background: transparent;
+  border-radius: 10px;
+  transition: border 1s;
+  position: relative;
+}
+
+.border:hover {
+  border: 1px solid white;
+}
+
+.card {
+  height: 378px;
+  width: 310px;
+  background: grey;
+  border-radius: 10px;
+  transition: background 0.8s;
+  overflow: hidden;
+  background: black;
+  box-shadow: 0 70px 63px -60px #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.card0 {
+  /*background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') center center no-repeat;*/
+  background: url('https://images.unsplash.com/photo-1593359863503-f598684c806f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80') center center no-repeat;
+  background-size: 310px;
+}
+
+.card0:hover {
+  /*background: url('https://i.pinimg.com/736x/8f/a0/51/8fa051251f5ac2d0b756027089fbffde--terry-o-neill-al-pacino.jpg') left center no-repeat;*/
+  background: url('https://images.unsplash.com/photo-1593359863503-f598684c806f?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2574&q=80') right center no-repeat;
+  background-size: 600px;
+}
+
+.card0 h2 {
+  opacity: 1;
+}
+
+.card1 {
+  /*background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') center center no-repeat;*/
+  background: url('https://images.unsplash.com/photo-1575285113814-f770cb8c796e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fG11c2ljfGVufDB8MXwwfGJsdWV8&auto=format&fit=crop&w=500&q=60') center center no-repeat;
+  background-size: 310px;
+}
+
+.card1:hover {
+  /*background: url('https://i.pinimg.com/originals/28/d2/e6/28d2e684e7859a0dd17fbd0cea00f8a9.jpg') left center no-repeat;*/
+  background: url('https://images.unsplash.com/photo-1575285113814-f770cb8c796e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8ODF8fG11c2ljfGVufDB8MXwwfGJsdWV8&auto=format&fit=crop&w=500&q=60') center center no-repeat;
+  background-size: 600px;
+}
+
+.card1 h2 {
+  opacity: 1;
+}
+
+.card2 {
+  /*background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') center center no-repeat;*/
+  background: url('https://images.unsplash.com/flagged/photo-1572482810910-9ff68908fcf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') center center no-repeat;
+  background-size: 310px;
+}
+
+.card2:hover {
+  /*background: url('https://i.pinimg.com/originals/ee/85/08/ee850842e68cfcf6e3943c048f45c6d1.jpg') left center no-repeat;*/
+  background: url('https://images.unsplash.com/flagged/photo-1572482810910-9ff68908fcf8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80') left center no-repeat;
+  background-size: 600px;
+}
+
+.card2 h2 {
+  opacity: 1;
+}
+
+h2 {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  color: white;
+  margin: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+
+h1 {
+  margin: 50px;
+  color: #03e9f4;
+  text-align: center;
+  font-size: 50px;
+}
+
+a:hover {
+  all: initial;
+}
+
+a {
+  all: initial;
+}
+
+#logout {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 0;
+  letter-spacing: 4px
+}
+
+#logout:hover {
+  background: #03e9f4;
+  color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 5px #03e9f4,
+              0 0 25px #03e9f4,
+              0 0 50px #03e9f4,
+              0 0 100px #03e9f4;
+}

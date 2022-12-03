@@ -1,0 +1,162 @@
+html {
+    background: linear-gradient(#141e30, #243b55);
+}
+
+body {
+    color: white;
+}
+
+iframe {
+    border-radius:15px;
+    margin: 50px auto;
+    display: block;
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, .8);
+    line-height: 1.375;
+    margin: 0 0 2.4rem 0;
+    letter-spacing: 1px;
+}
+
+h3 {
+    color: #03e9f4;
+    text-align: center;
+}
+
+
+a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 20px;
+    color: #03e9f4;
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: .5s;
+    margin-top: 30px;
+    letter-spacing: 4px
+}
+  
+a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 5px #03e9f4,
+                0 0 25px #03e9f4,
+                0 0 50px #03e9f4,
+                0 0 100px #03e9f4;
+}
+
+.addToList {
+    position: absolute;
+    margin: 50px auto;
+    top: 50%;
+    left: 50%;
+    height: 500px;
+    width: 700px;
+    padding: 40px;
+    transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.5);
+    box-sizing: border-box;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+
+    /******/
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    transition: opacity 0.3s 0s, visibility 0s 0.3s;
+    overflow-y: auto;
+    z-index: 10000;
+}
+
+.addToList.is-visible {
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: opacity 0.3s 0s, visibility 0s 0s;
+    -moz-transition: opacity 0.3s 0s, visibility 0s 0s;
+    transition: opacity 0.3s 0s, visibility 0s 0s;
+    backdrop-filter: blur(10px);
+}
+
+  
+.addToList h2 {
+    margin: 0 0 30px;
+    padding: 0;
+    color: #fff;
+    text-align: center;
+}
+
+.addToList .song-box {
+    position: relative;
+}
+
+.addToList .song-box input {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 30px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.addToList .song-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+}
+
+.addToList .song-box input:focus ~ label,
+.addToList .song-box input:valid ~ label {
+    top: -20px;
+    left: 0;
+    color: #03e9f4;
+    font-size: 12px;
+}
+
+  
+.addToList .cd-popup-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+}
+
+center {
+    margin: 20px auto;
+}
+
+
+.cd-close-button {
+    all: initial;
+    text-align: center;
+    background:none;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.add-song {
+    color: white;
+    border: solid 1px white;
+    border-radius: 10px;
+}
