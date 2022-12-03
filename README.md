@@ -58,10 +58,13 @@ To access the login page, click [here](http://os1.csi.miamioh.edu/~tranlh4/Login
 
 The web application use *Three-tier architecture* with Front-end, Back-end, and Database.
 
+![structure](https://upload.wikimedia.org/wikipedia/commons/thumb/5/51/Overview_of_a_three-tier_application_vectorVersion.svg/1920px-Overview_of_a_three-tier_application_vectorVersion.svg.png)
+*The structure of program*
+
 * For front-end, the project has HTML, CSS, and JavaScrip to for design and interaction. The web structure with HTML tags are be included in `.cpp` files, styles are included in `.css` files, and function interraction are inluded in `popup.js`, which is used for Feel & Love feature to open song add form.
 * For back-end, the CGI programs is used with MySQL++ library plugin. All the code for connecting to MySQL and web browser must be written in **C++**. For any `.cpp ` file that receives data submitted from previous file, it must also include `getpost.o`, which is compiled from `getpost.cpp` and `getpost.h` to process the submitted data.
 * For database, MySQL is responsible for storing user information and is also responsible for creating playlist under table form for each account created
 
 See the structure of **MeLokody** here:
 
-![architecture](https://github.com/TranHVLoc/MeLokody/blob/main/architecture.png)
+![project_architecture](https://github.com/TranHVLoc/MeLokody/blob/main/architecture.png)
