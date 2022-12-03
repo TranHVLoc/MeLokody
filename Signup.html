@@ -1,0 +1,69 @@
+<!-- SIGN UP PAGE to provide user's information -->
+<!--
+  Copyright 2022
+  Author: Loc Tran
+-->
+
+
+<!-- Referenced from https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda -->
+<!-- Modify by Loc Tran for project building purpose -->
+
+<!DOCTYPE HTML>
+<html lang = "en-US">
+
+    <!-- HEADER -->
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "./css/style.css" type="text/css">
+        <title>MeLokody</title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <div class="login-box">
+            <h2>Sign-up</h2>
+            <!-- Form starts here -->
+            <form action="processSignup.cgi" method="POST" id="my_form">
+              <!-- First name -->
+              <div class="user-box">
+                <input type="text" name="firstName" required>
+                <label for="firstName">First Name</label>
+              </div>
+              
+              <!-- Last name -->
+              <div class="user-box">
+                <input type="text" name="lastName" required>
+                <label for="lastName">Last Name</label>
+              </div>
+
+              <!-- Email address -->
+              <div class="user-box">
+                <input type="email" name="email" required>
+                <label for="email">Email</label>
+              </div>
+
+              <!-- Username -->
+              <div class="user-box">
+                <input type="text" name="username" required>
+                <label for="username">Username</label>
+              </div>
+
+              <!-- Password -->
+              <div class="user-box">
+                <input type="password" name="password" required>
+                <label for="password">Password</label>
+              </div>
+
+              <!-- Submit button with span outline -->
+              <a href="#" onclick="document.getElementById('my_form').submit(); return false;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Submit
+              </a>
+            </form>
+          </div>
+    </body>
+
+</html>

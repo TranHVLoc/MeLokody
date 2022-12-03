@@ -1,0 +1,54 @@
+<!-- Login page for user to access their account -->
+<!--
+  Copyright 2022
+  Author: Loc Tran
+-->
+
+<!-- Referenced from https://codepen.io/soufiane-khalfaoui-hassani/pen/LYpPWda -->
+<!-- Modify by Loc Tran for project building purpose -->
+
+<!DOCTYPE HTML>
+<html lang = "en-US">
+
+    <!-- HEADER -->
+    <head>
+        <meta charset="utf-8">
+        <link rel = "stylesheet" href = "./css/style.css" type="text/css">
+        <title>MeLokody</title>
+    </head>
+
+    <!-- BODY -->
+    <body>
+        <div class="login-box">
+            <h2>Login</h2>
+            <!-- Form starts here -->
+            <form id = "my_form" action="processLogin.cgi" method="POST">
+              <!-- Username -->
+              <div class="user-box">
+                <input type="text" name="username" required>
+                <label for="username">Username</label>
+              </div>
+
+              <!-- Password -->
+              <div class="user-box">
+                <input type="password" name="password" required>
+                <label for="password">Password</label>
+              </div>
+
+              <!-- Link for directing to Signup page if account not yet exists -->
+              <p id="no-account">Don't have an account? <a id="click" href="Signup.html" target="_blank">Click here</a></p>
+
+              <!-- Submit button with span outline -->
+              <a href="#" onclick="document.getElementById('my_form').submit(); return false;">
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                Let me in!
+              </a>
+
+            </form>
+          </div>
+    </body>
+
+</html>
